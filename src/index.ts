@@ -8,6 +8,8 @@ import { ExampleHardhatRuntimeEnvironmentField } from "./ExampleHardhatRuntimeEn
 // extensions in your npm package's types file.
 import "./type-extensions";
 
+import "./tasks/depver";
+
 extendConfig(
   (config: HardhatConfig, userConfig: Readonly<HardhatUserConfig>) => {
     // We apply our default config here. Any other kind of config resolution
