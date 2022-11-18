@@ -1,6 +1,6 @@
 {
   "name": "hardhat-depver",
-  "version": "0.0.5-0",
+  "version": "0.0.5-1",
   "description": "Hardhat TypeScript plugin boilerplate",
   "repository": "github:xinbenlv/hardhat-depver",
   "author": "Zainan Victor Zhou",
