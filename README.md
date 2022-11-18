@@ -12,74 +12,51 @@ This plugin will help you with world domination by implementing a simple tic-tac
 
 ## Installation
 
-<_A step-by-step guide on how to install the plugin_>
-
 ```bash
-npm install <your npm package name> [list of peer dependencies]
+npm install hardhat-depver
 ```
 
 Import the plugin in your `hardhat.config.js`:
 
 ```js
-require("<your plugin npm package name>");
+require("hardhat-depver");
 ```
 
 Or if you are using TypeScript, in your `hardhat.config.ts`:
 
 ```ts
-import "<your plugin npm package name>";
+import "hardhat-depver";
 ```
 
 
 ## Required plugins
 
-<_The list of all the required Hardhat plugins if there are any_>
-
-- [@nomiclabs/hardhat-web3](https://github.com/nomiclabs/hardhat/tree/master/packages/hardhat-web3)
+- `@nomiclabs/hardhat-ethers`
 
 ## Tasks
 
-<_A description of each task added by this plugin. If it just overrides internal
-tasks, this may not be needed_>
+This plugin adds the `depver` task to Hardhat:
 
-This plugin creates no additional tasks.
-
-<_or_>
-
-This plugin adds the _example_ task to Hardhat:
 ```
-output of `npx hardhat help example`
+output of `npx hardhat help depver`
 ```
 
-## Environment extensions
+Usage:
 
-<_A description of each extension to the Hardhat Runtime Environment_>
-
-This plugin extends the Hardhat Runtime Environment by adding an `example` field
-whose type is `ExampleHardhatRuntimeEnvironmentField`.
+```sh
+npx hardhat depver --network goerli --signer-index 2 --contract-name <ContractName>
+```
 
 ## Configuration
 
-<_A description of each extension to the HardhatConfig or to its fields_>
-
-This plugin extends the `HardhatUserConfig`'s `ProjectPathsUserConfig` object with an optional
-`newPath` field.
-
-This is an example of how to set it:
-
-```js
-module.exports = {
-  paths: {
-    newPath: "new-path"
-  }
-};
-```
+See configurating `hardhat-etherscan`
 
 ## Usage
 
-<_A description of how to use this plugin. How to use the tasks if there are any, etc._>
+```sh
+npx hardhat depver --network goerli --signer-index 2 --contract-name <ContractName>
+```
 
-There are no additional steps you need to take for this plugin to work.
+## Examples
 
-Install it and access ethers through the Hardhat Runtime Environment anywhere
-you need it (tasks, scripts, tests, etc).
+See a few examples in [ERCRef](https://github.com/ercref/ercref-contracts/blob/bfe09ef629c53dc738b4097cf97326f0e913bd55/ERCs/eip-5298/package.json#L26)
