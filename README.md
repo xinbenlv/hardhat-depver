@@ -2,14 +2,6 @@
 
 A handy hardhat plugin to deploy *and* verify source code via command-line
 
-[Hardhat](https://hardhat.org) plugin example.
-
-## What
-
-<_A longer, one paragraph, description of the plugin_>
-
-This plugin will help you with world domination by implementing a simple tic-tac-toe in the terminal.
-
 ## Installation
 
 ```bash
@@ -57,6 +49,16 @@ See configurating `hardhat-etherscan`
 npx hardhat depver --network goerli --signer-index 2 --contract-name <ContractName>
 ```
 
-## Examples
+### Examples
 
 See a few examples in [ERCRef](https://github.com/ercref/ercref-contracts/blob/bfe09ef629c53dc738b4097cf97326f0e913bd55/ERCs/eip-5298/package.json#L26)
+
+## Contributing
+
+### Publish
+
+We use [`np`](https://www.npmjs.com/package/np) for publishing. You shall be able to run the following
+
+```sh
+npx np
+```
